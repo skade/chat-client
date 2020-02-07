@@ -6,7 +6,6 @@ module ChatClient
 
   attach_function :start_client, [ :string, :string ], :pointer
   attach_function :read_line,    [ :pointer ], :string
-  attach_function :free_line,    [ :string ], :void
   attach_function :write_msg,    [ :pointer, :string ], :void
   attach_function :free_client,  [ :pointer ], :void
 end
